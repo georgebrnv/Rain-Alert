@@ -1,8 +1,9 @@
 import requests
 import smtplib
+import os
 
 OWM_Endopoint = "https://api.openweathermap.org/data/2.5/forecast"
-api_key = "{YOUR API from OPENWEATHERMAP.ORG}"
+api_key = os.environ.get("OWM_API_KEY")
 
 EMAIL = "example.email.com"
 PASSWORD = "password123"
